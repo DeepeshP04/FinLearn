@@ -1,5 +1,33 @@
-{% extendes "base.html" %}
+{% extends "base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-home.css') }}">
+
+{% endblock %}
 
 {% block content %}
-
+<div class="info-section">
+    <h1 class="main-heading">Empower Your Financial Future</h1>
+    <p class="info-para">Welcome to our platform dedicated to enhancing your financial literacy. Explore our tutorials on 
+        investments, savings, and more to make informed decisions for a secure tomorrow.
+    </p>
+    <div class="get-started-button-container">
+        <button class="get-started-btn">Get Started</button>
+    </div>
+    <div class="investment-savings-section">
+        <div class="left-section">
+            <img class-"info-image" src="" alt="Financial Learning">
+        </div>
+        <div class="right-section">
+            <div class="investment-tutorials-container">
+                <h4>Investment Tutorials</h4>
+                <p>Explore a variety of tutorials on investment basics, advanced strategies, and risk management.</p>
+            </div>
+            <div class="savings-tips-container">
+                <h4>Savings Tips</h4>
+                <p>Discover the importance of saving money and how to effectively manage your finances.</p>
+            </div> 
+        </div>
+    </div>
+</div>
 {% endblock %}

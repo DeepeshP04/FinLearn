@@ -1,0 +1,78 @@
+header{
+    background-color: antiquewhite;
+}
+.navbar-brand {
+    color: #123456d3 !important; 
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none; 
+    border-bottom: 2px solid #ffcc00; 
+    padding-bottom: 5px;
+}
+
+.navbar-brand:hover {
+    border-color: #00bcd4;
+}
+
+.navbar-toggler{
+    background-color: darksalmon !important;
+}
+
+.nav-link {
+    margin-right: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.navbar-text .nav-link {
+    margin-left: 15px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-text .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+        
+.navbar-brand, .nav-link {
+    font-size: 1rem;
+}
+
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid black ;
+}
+
+.footer-content .right-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-content p {
+    margin: 1rem 0;
+}
+
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
