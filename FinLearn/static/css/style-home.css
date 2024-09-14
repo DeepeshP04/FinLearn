@@ -44,6 +44,16 @@
     transform: scale(1.05);
 }
 
+.go-to-savings{
+    color: white;
+    text-decoration: none;
+}
+
+.go-to-savings:hover{
+    color: #ffcccb;
+    text-decoration: underline;
+}
+
 .investment-savings-section {
     display: flex;
     justify-content: space-between;

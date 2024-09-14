@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}
+About
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-about.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <h1 class="about-heading">About FinLearn: Financial Literacy Platform</h1>
+
+    <div class="about-section">
+        <h2>Overview</h2>
+        <p>Our platform is designed to empower individuals by providing them with the knowledge they need to make informed financial decisions. Whether you're new to the world of finance or looking to deepen your understanding, our application is tailored to help you learn about crucial financial topics such as investment and savings. The unique aspect of our platform is that it offers multiple learning methods: text-based tutorials, interactive games, and engaging animations, catering to different learning preferences.</p>
+    </div>
+
+    <div class="about-section">
+        <h2>Learning Through Text</h2>
+        <p>For those who prefer reading, we offer in-depth articles that break down financial concepts like savings strategies, types of investments, and the importance of financial planning. These tutorials are written in a clear and concise manner, making it easy for users of all experience levels to grasp complex topics.</p>
+    </div>
+
+    <div class="about-section">
+        <h2>Interactive Games</h2>
+        <p>Learning can be fun, and we believe in reinforcing financial knowledge through interactive experiences. Our platform includes financial games that simulate real-world scenarios, helping users practice decision-making in areas like saving, budgeting, and investing. This hands-on approach allows users to apply what they've learned in a risk-free environment, improving their financial skills.</p>
+    </div>
+
+    <div class="about-section">
+        <h2>Engaging Animations</h2>
+        <p>For visual learners, we provide animations that simplify complex financial concepts, making them easier to understand. These animations are designed to visually explain processes like compound interest, the stock market, and personal budgeting, turning intricate topics into engaging and easy-to-follow content.</p>
+    </div>
+
+    <div class="about-section">
+        <h2>Our Mission</h2>
+        <p>We aim to promote financial literacy for everyone. In an increasingly complex financial world, understanding money management is crucial for securing a stable future. Our platform is designed to make learning about finance accessible, enjoyable, and practical for all users, whether you're planning for retirement, saving for a big purchase, or simply trying to manage your budget better.</p>
+    </div>
+</div>
+{% endblock %}

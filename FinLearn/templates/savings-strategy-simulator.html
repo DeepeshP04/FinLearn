@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}
+Savings Strategy Simulator
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-savings-strategy-simulator.css') }}">
+{% endblock %}
+
+{% block content%}
+
+<div class="container">
+    <h1>Savings Strategy Simulator</h1>
+    <div class="section">
+        <label for="initial-funds">Initial Funds</label>
+        <input type="number" id="initial-funds" placeholder="Enter initial amount" value="10000">
+    </div>
+    <div class="section">
+        <label for="goal">Set Your Savings Goal</label>
+        <input type="text" id="goal" placeholder="e.g., Vacation, Emergency Fund">
+    </div>
+    <div class="section">
+        <label for="savings-amount">Savings Amount per Month</label>
+        <input type="number" id="savings-amount" placeholder="Amount to save each month" value="500">
+    </div>
+    <div class="section">
+        <label for="account-type">Choose Savings Account Type</label>
+        <select id="account-type">
+            <option value="regular">Regular Savings Account</option>
+            <option value="fd">Fixed Deposit (FD)</option>
+            <option value="high-yield">High-Yield Savings Account</option>
+            <option value="emergency-fund">Emergency Fund</option>
+        </select>
+    </div>
+    <button class="button" onclick="simulateSavings()">Simulate Savings</button>
+    <div id="result" class="result">
+        
+    </div>
+</div>
+
+{%endblock %}

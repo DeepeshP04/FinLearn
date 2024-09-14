@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}
+Savings - Learn by Games
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-savings-learn-by-games.css') }}">
+{% endblock %}
+
+{% block content%}
+<div class="savings-games-container">
+    <h1>Learn by Games</h1>
+    <div class="explore-games">
+        <div>
+            <a href="/savings/savings_strategy_simulator">Savings Strategy Simulator</a>
+        </div>
+        <div>
+            <a href="#"></a>
+        </div>
+        <div>
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

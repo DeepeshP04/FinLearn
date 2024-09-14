@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}
+Savings - Learn by Reading
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-savings-learn-by-reading.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="savings-content-container">
+    <h1 class="main-heading">Learn by Reading</h1>
+    <div class="savings-section">
+        <h2 class="sub-heading">Introduction to Savings</h2>
+        <p class="paragraph">
+            Saving involves setting aside a portion of your income for future use rather than spending it immediately.
+            It's essential for achieving financial goals, preparing for emergencies, and securing a stable future.
+        </p>
+        
+        <h3 class="sub-sub-heading">Types of Savings Accounts</h3>
+        <div class="savings-types">
+            <div class="savings-type">
+                <h4>1. Regular Savings Account</h4>
+                <p><strong>Overview:</strong> A basic account that offers low interest rates. It's ideal for short-term savings and provides easy access to your money.</p>
+                <p><strong>Benefits:</strong> Liquidity, safety, and ease of access.</p>
+            </div>
+
+            <div class="savings-type">
+                <h4>2. Fixed Deposit (FD)</h4>
+                <p><strong>Overview:</strong> A fixed-term investment with higher interest rates compared to regular savings accounts. Your money is locked in for a specific period.</p>
+                <p><strong>Benefits:</strong> Higher interest rates, lower risk, and guaranteed returns.</p>
+            </div>
+
+            <div class="savings-type">
+                <h4>3. High-Yield Savings Account</h4>
+                <p><strong>Overview:</strong> An account that offers higher interest rates than regular savings accounts, often provided by online banks.</p>
+                <p><strong>Benefits:</strong> Higher returns, FDIC insurance, and easy access.</p>
+            </div>
+
+            <div class="savings-type">
+                <h4>4. Emergency Fund</h4>
+                <p><strong>Overview:</strong> Money set aside specifically for unexpected expenses such as medical emergencies or car repairs.</p>
+                <p><strong>Benefits:</strong> Provides financial security and peace of mind.</p>
+            </div>
+        </div>
+
+        <h3 class="sub-sub-heading">How to Start Saving</h3>
+        <ul class="saving-tips">
+            <li><strong>Set Clear Goals:</strong> Define what you're saving for, such as a vacation, a new car, or an emergency fund.</li>
+            <li><strong>Create a Budget:</strong> Track your income and expenses to find out how much you can save each month.</li>
+            <li><strong>Choose the Right Savings Account:</strong> Based on your goals and needs, select the type of savings account that suits you best.</li>
+            <li><strong>Automate Savings:</strong> Set up automatic transfers to your savings account to ensure consistency.</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
