@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}
+Investment Tutorials
+{% endblock %}
+
+{% block styles%}
+<link rel="stylesheet" href="{{url_for('static', filename="css/style-investment.css")}}">
+{% endblock %}
+
+{% block content%}
+<div class="explore-investment-container">
+    <h1>Explore Investment</h1>
+    <div class="explore-options">
+        <div>
+            <a href="#">Learn by Reading</a>
+        </div>
+        <div>
+            <a href="#">Learn by Games</a>
+        </div>
+        <div>
+            <a href="#">Learn by Animations</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
