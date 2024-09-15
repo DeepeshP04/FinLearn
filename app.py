@@ -1,6 +1,3 @@
-# Seperate file for server
-# not needed
-
 from FinLearn import create_app
 
 app = create_app()
