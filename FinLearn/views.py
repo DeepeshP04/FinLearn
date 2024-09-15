@@ -32,7 +32,7 @@ def savings_learn_by_games():
     return render_template("savings-learn-by-games.html")
 
 @views.route("/savings/savings_strategy_simulator")
-def savings_game_1():
+def savings_strategy_simulator():
     """
     Render the Savings Strategy Simulator game.
     """
@@ -44,6 +44,27 @@ def investment_overview():
     Render the investment overview page.
     """
     return render_template("investment.html")
+
+@views.route("/investment/learn_by_reading")
+def investment_learn_by_reading():
+    """
+    Render the 'Learn by Reading' section under Investment.
+    """
+    return render_template("investment-learn-by-reading.html")
+
+@views.route("/investment/learn_by_games")
+def investment_learn_by_games():
+    """
+    Render the 'Learn by Games' section under Investment.
+    """
+    return render_template("investment-learn-by-games.html")
+
+@views.route("/investment/investment_portfolio_simulator")
+def investment_portfolio_simulator():
+    """
+    Render the Investment Portfolio Simulator game.
+    """
+    return render_template("investment-portfolio-simulator.html")
 
 @views.route("/about")
 def about():

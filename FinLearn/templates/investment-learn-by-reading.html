@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}
+Investment - Learn by Reading
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/investment-learn-by-reading.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Investment Tutorials</h1>
+
+    <h2>Introduction to Investments</h2>
+    <p>Investing is the process of putting your money into assets with the expectation of generating a return over time. By investing wisely, you can grow your wealth, beat inflation, and achieve your financial goals. Let's explore some key investment vehicles and strategies.</p>
+
+    <h2>Types of Investments</h2>
+    <ul>
+        <li>
+            <strong>Stocks:</strong> A type of security that represents ownership in a company. Stocks provide the potential for high returns but come with higher risk.
+        </li>
+        <li>
+            <strong>Bonds:</strong> Loans made by investors to borrowers, typically governments or corporations. Bonds are considered safer than stocks but generally offer lower returns.
+        </li>
+        <li>
+            <strong>Mutual Funds:</strong> A pool of money collected from many investors to invest in securities like stocks, bonds, and other assets. Mutual funds are managed by professional fund managers.
+        </li>
+        <li>
+            <strong>Exchange-Traded Funds (ETFs):</strong> Similar to mutual funds but traded on stock exchanges. ETFs offer diversification and are more accessible to individual investors.
+        </li>
+        <li>
+            <strong>Real Estate:</strong> Property investments that can generate rental income or capital appreciation. Real estate is a tangible asset and can provide diversification to your investment portfolio.
+        </li>
+    </ul>
+
+    <h2>How to Start Investing</h2>
+    <p>Investing can seem intimidating, but with the right knowledge and tools, you can make informed decisions. Here's how you can get started:</p>
+    <ul>
+        <li><strong>Set Your Financial Goals:</strong> Determine what you are investing for, whether it's retirement, a house, or a large purchase. Your goals will guide your investment strategy.</li>
+        <li><strong>Understand Your Risk Tolerance:</strong> Assess how much risk you're willing to take. Higher-risk investments, like stocks, can offer higher returns, but they can also lead to bigger losses.</li>
+        <li><strong>Choose Your Investments:</strong> Based on your goals and risk tolerance, select the types of investments that align with your objectives.</li>
+        <li><strong>Start Small and Diversify:</strong> You don’t need a large sum of money to begin. Start small, and diversify your investments to reduce risk.</li>
+        <li><strong>Stay Informed:</strong> Keep up with financial news and continuously educate yourself about the market. Review your portfolio periodically to ensure it aligns with your goals.</li>
+    </ul>
+
+    <h2>Investment Strategies</h2>
+    <ul>
+        <li>
+            <strong>Buy and Hold:</strong> A long-term strategy where you purchase assets and hold onto them for an extended period, regardless of market fluctuations.
+        </li>
+        <li>
+            <strong>Dollar-Cost Averaging:</strong> Investing a fixed amount of money at regular intervals, regardless of the asset's price, to minimize the impact of volatility.
+        </li>
+        <li>
+            <strong>Growth Investing:</strong> Focusing on stocks or assets that are expected to grow at an above-average rate compared to the market.
+        </li>
+        <li>
+            <strong>Value Investing:</strong> Identifying undervalued stocks or assets and purchasing them with the belief that their value will rise over time.
+        </li>
+        <li>
+            <strong>Diversification:</strong> Spreading investments across various asset classes to reduce risk. A diversified portfolio is less likely to be impacted by a single event or market downturn.
+        </li>
+    </ul>
+
+</div>
+
+{% endblock %}

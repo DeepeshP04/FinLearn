@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+Investment Portfolio Simulator
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/investment-portfolio-simulator.css') }}">
+{% endblock %}
+
+{%block scripts%}
+<script src="{{url_for('static', filename='js/investment-portfolio-simulator.js')}}"></script>
+{%endblock%}
+
+{% block content %}
+<div class="container">
+    <h2>Manage Your Portfolio</h2>
+    <label for="initial-capital">Initial Capital:</label>
+    <input type="number" id="initial-capital" value="100000">
+    
+    <div class="investment-actions">
+        <label for="asset-type">Choose Asset Type:</label>
+        <select id="asset-type">
+            <option value="stock">Stock</option>
+            <option value="bond">Bond</option>
+            <option value="etf">ETF</option>
+            <option value="real-estate">Real Estate</option>
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" value="1000">
+        
+        <button onclick="buyAsset()">Buy</button>
+        <button onclick="sellAsset()">Sell</button>
+    </div>
+    
+    <div class="results">
+        <h3>Portfolio Summary</h3>
+        <p id="portfolio-value">Portfolio Value: $0</p>
+    </div>
+</div>
+
+{%endblock%}

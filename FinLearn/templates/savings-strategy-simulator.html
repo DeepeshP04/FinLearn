@@ -4,8 +4,12 @@ Savings Strategy Simulator
 {% endblock %}
 
 {% block styles %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style-savings-strategy-simulator.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/savings-strategy-simulator.css') }}">
 {% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', filename='js/savings-strategy-simulator.js')}}"></script>
+{%endblock%}
 
 {% block content%}
 

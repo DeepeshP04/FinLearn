@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    height: fit-content;
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;

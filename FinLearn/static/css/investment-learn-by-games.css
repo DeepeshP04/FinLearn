@@ -1,0 +1,46 @@
+.investment-games-container{
+    height: 100vh;
+    margin: 40px;
+}
+
+.invetment-games-container h1 {
+    text-align: left;
+    margin: 40px 120px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.explore-games {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 120px;
+}
+
+.explore-games div {
+    padding: 20px 30px;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.2rem;
+    min-width: 180px;
+}
+
+.explore-games div:hover {
+    transform: translateY(-5px);
+    background-color: #e0e0e0;
+}
+
+.explore-games a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.explore-games a:hover {
+    text-decoration: underline;
+}
