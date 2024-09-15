@@ -1,5 +1,5 @@
 # FinLearn
 
 ## Description
-FinLearn is designed to empower individuals by providing them with the required financial knowledge.
+FinLearn is a web application designed to help users learn about financial literacy through educational content, and games. The platform focuses on savings and investments strategies.
 
